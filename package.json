@@ -1,0 +1,24 @@
+{
+  "name": "burger-joint",
+  "version": "1.0.0",
+  "description": "Burger Selector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rkaylor/burger-joint.git"
+  },
+  "author": "Robert Kaylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rkaylor/burger-joint/issues"
+  },
+  "homepage": "https://github.com/Rkaylor/burger-joint#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
