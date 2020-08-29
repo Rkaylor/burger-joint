@@ -3,9 +3,9 @@
 <h2>Burgers to Eat!</h2>
 
 <ul>
-  {{#each burger}}
+  {{#each burgers}}
     {{#unless hungry}}
-      {{> burger/burger-block hungry=true}}
+      {{ burgers/burger-block hungry=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -13,9 +13,9 @@
 <h2>Burgers to Devour!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> burger/burger-block hungry=false}}
+  {{#each burgers}}
+    {{#if devour}}
+      {{ burgers/burger-block hungry=false}}
     {{/if}}
   {{/each}}
 </ul>
