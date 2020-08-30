@@ -4,18 +4,26 @@
 
 <ul>
   {{#each burgers}}
-    {{#unless hungry}}
-      {{ burgers/burger-block hungry=true}}
+    {{#unless this.hungry}}
+      {{!-- {{> burgers/burger-block hungry=true}} --}}
+      <li>{{this.name}}</li>
+      <button class="change-hungry" data-id="{{this.id}}" data-newburger="{{this.hungry}}">
+        Devour
+      </button>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers to Devour!</h2>
+<h2>Burgers to Devour!</h2>ß
 
 <ul>
   {{#each burgers}}
     {{#if devour}}
-      {{ burgers/burger-block hungry=false}}
+      {{!-- {{> burgers/burger-block hungry=false}} --}}
+      <li>{{this.name}}</li>
+      <button class="change-hungry" data-id="{{this.id}}" data-newburger="{{this.devoured}}">
+        hungry
+      </button>
     {{/if}}
   {{/each}}
 </ul>
